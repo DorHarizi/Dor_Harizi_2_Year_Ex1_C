@@ -1,25 +1,28 @@
-##NumClass dictionary
----
+## NumClass dictionary
 
 עליכם לכתוב ספריה שחושפת למשתמש מספר פונקציות לסיווג מספרים. הפונקציות יוגדרו בקובץ
 עבור שאילתה בוליאנית: int כאשר מחזירים NumClass.h
 0 is false
 1 is true
+
 על הקובץ להכיל את החתימות:
-/* will return if a number is Armstrong number
+# int isArmstrong(int)
+will return if a number is Armstrong number
 An Armstrong number is an n-digit number that is equal to the sum of the nth powers of its digits.
 For Example: 407 = 43 + 03 + 73 = 64 + 0 + 343 = 407
-*/
-int isArmstrong(int)
-/* will return if a number is a palindrome */
-int isPalindrome(int)
-/* will return if a number is prime*/
-int isPrime(int)
-/*Strong number is a special number whose sum of the factorial of digits is equal to the original
+
+# int isPalindrome(int) 
+will return if a number is a palindrome 
+
+# int isPrime(int)
+will return if a number is prime
+
+# int isStrong(int)
+Strong number is a special number whose sum of the factorial of digits is equal to the original
 number. For Example: 145 is strong number
 1! + 4! + 5! = 145
-*/
-int isStrong(int)
+
+
 את מימושי הפונקציות יש לכתוב 3 קבצים שונים.
 isPrime, isStrong שיכיל את מימושי הפונקציות basicClassification.c 1.קובץ ראשון
 אשר ימומשו isArmstrong, isPalindrome שיכיל את מימושי פונקציות advancedClassificationLoop.c .2
@@ -29,8 +32,7 @@ isPrime, isStrong שיכיל את מימושי הפונקציות basicClassific
 
 ---
 
-##Main
----
+## Main
 
 עליכם לכתוב תוכנית שתקבל מהמשתמש 2 מספרים שלמים חיובים עליכם להדפיס למסך 4 שורות אשר
 יכילו את כל המספרים הראשונים, מספרי ארמסטרונג, מספרים חזקים והפלנדרומים אשר בין שני המספרים
@@ -40,8 +42,8 @@ isPrime, isStrong שיכיל את מימושי הפונקציות basicClassific
 
 ---
 
-##Makefile
----
+## Makefile
+
 
 עם הפקודות הבאות: makefile עליכם להגיש קובץ בשם
 שתכיל את מימושי כל libclassloops.a על הקומפיילר ליצור את הספרייה הסטאטית make loops *
